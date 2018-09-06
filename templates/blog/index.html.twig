@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello {{ controller_name }}!{% endblock %}
+
+{% block body %}
+    <section class="article">
+        <article>
+            <h2>Titre de l'article</h2>
+            <div class="metadata">Ecrit le 13/3/2018 dans catégorie politique </div>
+            <div class="content">
+                <img src="http://placehold.it/350*350" alt="">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Dicta architecto autem est odio.</p>
+                <a href="{{ path('blog_show') }}" class="btn btn-success">lire la suite</a>
+            </div>
+        </article>
+        <article>
+            <h2>Titre de l'article</h2>
+            <div class="metadata">Ecrit le 13/3/2018 dans catégorie politique </div>
+            <div class="content">
+                <img src="http://placehold.it/350*350" alt="">
+                <p>Ipsum totam modi eligendi repellendus.</p>
+                <p>Dolorum corporis nostrum saepe rerum?</p>
+                <a href="{{ path('blog_show') }}" class="btn btn-success">lire la suite</a>
+            </div>
+        </article>
+        <article>
+            <h2>Titre de l'article</h2>
+            <div class="metadata">Ecrit le 13/3/2018 dans catégorie politique </div>
+            <div class="content">
+                <img src="http://placehold.it/350*344" alt="">
+                <p>Rerum beatae est iste dolore.</p>
+                <p>Aspernatur hic veritatis voluptate a!</p>
+                <a href="{{ path('blog_show') }}" class="btn btn-success">lire la suite</a>
+            </div>
+        </article>
+    </section>
+{% endblock %}
